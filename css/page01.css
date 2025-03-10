@@ -296,6 +296,7 @@ section .s_inner {
 
 .s_2 .s_inner figure {
   position: relative;
+  cursor: pointer;
 }
 
 .s_2 .s_inner figure p {
@@ -304,7 +305,8 @@ section .s_inner {
   bottom: 2px;
   left: 2px;
   color: #fff;
-  height: 54px;
+  height: 3.6vw;
+  min-height: 40px;
   background-color: #000000d2;
   font-size: 30px;
   text-align: center;
@@ -563,6 +565,8 @@ footer .nav ul {
     margin-bottom: 74px;
   }
 
+  
+
   .s_1 .s_inner h2::after {
     height: 106px;
     top: 127px;
@@ -631,6 +635,11 @@ footer .nav ul {
 
   .s_1 .s_inner .all_line .main .text p {
     font-size: 20px;
+  }
+
+  .s_2 .s_inner figure p{
+    bottom:1px;
+    font-size: 25px;
   }
 
 
@@ -730,6 +739,11 @@ footer .nav ul {
   .s_1 .s_inner .all_line .b_r {
     width: 264px;
 
+  }
+
+  .s_2 .s_inner figure p{
+    font-size: 20px;
+    min-height: 30px;
   }
 
   .s_3 .s_inner .all_line .t_r {
@@ -889,6 +903,20 @@ footer .nav ul {
     max-width: 500px;
   }
 
+
+  .s_2 .s_inner figure{
+    cursor: default;
+  }
+  
+
+  .s_2 .s_inner figure p{
+    font-size: 20px;
+    height: 40px;
+    min-height: 18px;
+  }
+
+
+
   .s_3 .s_inner .all_line {
     padding: 16px;
     top: -65px;
@@ -1035,6 +1063,12 @@ footer .nav ul {
     max-width: 400px;
   }
 
+  .s_2 .s_inner figure p{
+    font-size: 20px;
+    height: 30px;
+  }
+
+
   .s_3 .s_inner .all_line .t_r{
     width: 138px;
   }
@@ -1174,9 +1208,15 @@ footer .nav ul {
   }
 
   .s_2 .s_inner{
-    margin-top: 1vw;
+    margin-top: -1vw;
     max-width: 300px;
     gap:10px
+  }
+
+
+  .s_2 .s_inner figure p{
+    font-size: 14px;
+    height: 22px;
   }
 
 
@@ -1266,10 +1306,4 @@ footer .nav ul {
   }
 
   
-}
-
-@media screen and (max-width:500px){
-  .s_2 .s_inner{
-    margin-top: -1vw;
-  }
 }

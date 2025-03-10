@@ -1485,6 +1485,96 @@ font-size:100px ;
   .main_line{
     padding: 26px;
   }
+
+  .main_line main{
+    border: 1px solid #65B3AA;
+  }
+
+  .main_line .line_tr{
+    height: 1px;
+  }
+
+  .main_line .line_tl{
+    height: 1px;
+  }
+
+  .main_line .line_r_01{
+    width: 1px;
+  }
+
+  .main_line .line_l_01{
+    width: 1px;
+  }
+
+  .main_line .line_r_02{
+    width: 1px;
+  }
+
+  .main_line .line_l_02{
+    width: 1px;
+  }
+
+  .main_line .line_br{
+    border-top: 1px solid #65B3AA;
+    border-left: 1px solid #65B3AA;
+  }
+
+  .main_line .line_bl{
+    border-top: 1px solid #65B3AA;
+    border-right: 1px solid #65B3AA;
+  }
+
+  .s_1 h2{
+    border-left: 1px solid #65B3AA;
+    border-right: 1px solid #65B3AA;
+  }
+  .s_1 .allbox .img_box .box{
+    border: 1px solid #65B3AA;
+  }
+
+  .s_2{
+    border-left:1px solid #65B3AA ;
+    border-right:1px solid #65B3AA ;
+  }
+
+  .s_2 .s_inner .v_inner .v_box{
+    border: 1px solid #65B3AA;
+  }
+
+  .s_3 h2{
+    border-bottom: 1px solid #65B3AA;
+  }
+
+  .s_3 .s_inner .merch01::after{
+    width: 1px;
+  }
+
+  .s_3 .s_inner .merch02::before{
+    height: 1px;
+  }
+
+  .s_3 .s_inner .merch01::before{
+    height: 1px;
+  }
+
+  .s_3 .s_inner .merch04::after{
+    width: 1px;
+  }
+
+  .s_3 .s_inner .merch03::before{
+    height: 1px;
+  }
+  .s_3 .s_inner .merch04::before{
+    height: 1px;
+  }
+
+  .s_3 .s_inner .merch05::after{
+    width: 1px;
+  }
+
+  .s_3 .shop_b{
+    border-bottom: 1px solid #65B3AA;
+  }
 }
 
 
