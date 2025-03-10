@@ -1,0 +1,407 @@
+header {
+    width: 100%;
+    height: 100px;
+    padding: 0 16px;
+    margin-top: 6%;
+    margin-bottom: 10%;
+   position: relative;
+    background-color: #000;
+  
+  }
+  
+  header .h_inner {
+    width: calc(100% - 11vw);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .h_inner .main_ul {
+    display: flex;
+    font-size: 40px;
+    font-family: "cg_s";
+  }
+  
+  
+  header .h_inner h1 {
+    width: 84px;
+    animation-name: logo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  header .h_inner h1 a img {
+    width: 84px;
+  }
+  
+  @keyframes logo {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  header .h_inner .main_ul li:not(:last-child) {
+    margin-right: 100px;
+  
+  }
+  
+  header .h_inner .main_ul li:hover {
+    color: #65B3AA;
+  }
+  
+  header .h_inner .ham{
+    display: none;
+    cursor: pointer;
+  }
+  
+  header .h_inner .ham .ham_i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header .h_inner .ham .ham_i .line{
+    width: 30px;
+    height: 2px;
+    background-color: #65B3AA;
+  }
+  
+  header .h_inner .h_menu{
+    display: none;
+   } 
+   
+   header .h_inner .h_menu .ham_menu{
+     width: 20%;
+     height: 302px;
+     background-color: #65B3AA;
+     color: #fff;
+     position: absolute;
+     top: 0;
+     right: 0;
+     font-size: 26px;
+     font-family: "cg_s";
+     z-index: 99;
+     
+   }
+   
+   header .h_inner .h_menu .ham_menu ul{
+     padding: 20px;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+   }
+   header .h_inner .h_menu .ham_menu ul li:first-child{
+     color: #000;
+   }
+   header .h_inner .ham_menu ul li:hover{
+    scale: 1.1;
+  }
+
+  section{
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  section .s_inner{
+    width: 100%;
+    max-width: 1534px;
+    margin: auto;
+  }
+
+  section .s_inner .content{
+    width: 100%;
+    margin-bottom: 300px;
+    
+  }
+
+  
+  section .s_inner .content h2{
+    color: #65B3AA;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: "cg_s";
+
+
+  }
+
+
+  section .s_inner .content .v_box{
+    width: 100%;
+    height: 29vw;
+    min-height: 170px;
+    border: 2px solid #65B3AA;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  section .s_inner .content .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  section .s_inner .content .btn .l_btn{
+    cursor: pointer;
+  }
+
+  section .s_inner .content .btn .m_btn{
+    cursor: pointer;
+  }
+
+  section .s_inner .content .btn .r_btn{
+    cursor: pointer;
+  }
+
+  section .s_inner .content .view{
+    width: 234px;
+    height: 70px;
+    border: 2px solid #65B3AA;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+  }
+  
+
+  section .s_inner .content .view p{
+    font-size: 40px;
+    font-family: "cg_s";
+    
+  }
+
+
+
+
+  footer {
+    width: 100%;
+    height: 468px;
+    background-color: #65B3AA;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 270px;
+  
+  }
+  
+  footer p {
+  
+    font-size: 150px;
+    font-family: "cg_s";
+  }
+  
+  footer .nav {
+    width: 100%;
+    background-color: #65B3AA;
+  }
+  
+  footer .nav ul {
+    width: 100%;
+    max-width: 1137px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-family: "jeju";
+    font-size: 40px;
+    font-weight: 500;
+  
+  }
+
+
+
+  @media screen and (max-width:1200px){
+    header .h_inner h1 a img {
+        width: 70px;
+      }
+    
+      header .h_inner .main_ul {
+        display: flex;
+        font-size: 30px;
+        font-family: "cg_s";
+      }
+    
+      header .h_inner .main_ul li:not(:last-child) {
+        margin-right: 80px;
+    
+      }
+
+      section .s_inner .content{
+        margin-bottom: 200px;
+      }
+
+      section .s_inner .content h2{
+        font-size: 40px;
+      }
+
+
+      section .s_inner .content .btn{
+        gap: 17px;
+      }
+
+      section .s_inner .content .view{
+        width: 180px;
+        height: 55px;
+        bottom: -80px;
+      }
+
+      section .s_inner .content .view p{
+        font-size: 30px;
+      }
+
+
+
+
+      footer {
+        height: 300px;
+        padding: 32px 0;
+        margin-top: 200px;
+      }
+    
+      footer p {
+        font-size: 100px;
+      }
+    
+      footer .nav ul {
+        font-size: 30px;
+        justify-content: space-evenly;
+      }
+  }
+
+  @media screen and (max-width:900px){
+    header {
+        height: 80px;
+        margin-bottom: 160px;
+        margin-top: 100px;
+      }
+    
+      header .h_inner h1 {
+        width: 50px;
+      }
+    
+      header .h_inner h1 a img {
+        width: 50px;
+      }
+    
+      header .h_inner .main_ul {
+        font-size: 25px;
+      }
+
+      section .s_inner .content .view{
+        width: 120px;
+        height: 46px;
+        bottom: -60px;
+      }
+
+      section .s_inner .content .view p{
+        font-size: 24px;
+      }
+  }
+
+  @media screen and (max-width:767px){
+    header{
+     
+        height: 200px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      
+    }
+  
+    header .h_inner h1{
+      justify-self: center;
+      margin: auto;
+    }
+  
+    header .h_inner .main_ul{
+      display: none;
+    }
+  
+    header .h_inner .ham{
+      display: block;
+    }
+  
+    header .h_inner .h_menu .ham_menu{
+      width: 25%;
+      font-size: 20px;
+      height: 266px;
+  
+    }
+
+    section{
+      padding: 0 16px;
+    }
+
+    section .s_inner .content{
+      margin-bottom: 100px;
+    }
+
+    section .s_inner .content h2{
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    section .s_inner .content .v_box{
+      margin-bottom: 15px;
+      border: 1px solid #65B3AA;
+    }
+
+    section .s_inner .content .btn{
+      gap: 10px;
+    }
+
+    section .s_inner .content .view{
+      width: 80px;
+      height: 32px;
+      bottom: -42px;
+    }
+
+    section .s_inner .content .view p{
+      font-size: 18px;
+      font-family: "cg_l";
+    }
+
+    
+  footer {
+    height: 200px;
+  }
+
+  footer p {
+    font-size: 50px;
+  }
+
+  footer .nav ul {
+    font-size: 18px;
+    justify-content: space-evenly;
+  }
+  
+  
+  }
+
+  @media screen and (max-width:400px){
+    section .s_inner .content .view{
+      width: 64px;
+      height: 22px;
+      bottom: -32px;
+      border: 1px solid #65B3AA;
+    }
+
+    section .s_inner .content .view p{
+      font-size: 14px;
+    }
+  }
+  
