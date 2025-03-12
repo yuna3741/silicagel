@@ -25,6 +25,88 @@ $(function (){
         }else{
             ham.css({display:'block'});
         }
-    })
+    });
+
+
+   
+    const swiper1 = new Swiper(".mySwiper_1", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".r_btn_1",
+                prevEl: ".l_btn_1",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true
+        });
+
+        const swiper2 = new Swiper(".mySwiper_2", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".r_btn_2",
+                prevEl: ".l_btn_2",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true
+        });
+
+       const swiper3 = new Swiper(".mySwiper_3", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".r_btn_3",
+                prevEl: ".l_btn_3",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true
+        });
+
+        swiper1.on('slideChange', function(){
+            $("video").each(function(){
+                $(this)[0].pause();
+                
+
+            });
+        });
+
+
+
+        let m_btn_1 = $("section .s_inner .content .btn .m_btn_1");
+
+
+        m_btn_1.click(function(){
+         let activeIndex = swiper1.activeIndex;
+         let currentSlide = $(swiper1.slides[activeIndex]);
+         let video = currentSlide.find("video")[0];
+
+         if(video){
+            $(this).toggleClass("video_on");
+
+            if(video.paused){
+                video.play();
+                video.muted = false;
+            }else{
+                video.pause();
+                video.muted = true;
+            }
+                
+         }
+        });
+
+        
+       
+
+
+
+   
+
+   
  ///
 });
