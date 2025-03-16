@@ -244,6 +244,9 @@ header {
   }
 
 
+
+
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -257,8 +260,9 @@ header {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
   }
+
 
   .swiper-slide img {
     display: block;
